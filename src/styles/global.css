@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap');
+/* IBM Plex Mono */
+/* IBM Plex Sans */
+/* Montserrat */
+
+
+:root {
+	--bg: #090809;
+	--fg: #0094C6;
+
+	--dark: #141414;
+	--danger: #FF0035;
+	--glint: #FFB20F;
+	--light: #E6E8E6;
+
+	--resp: 0.25rem; /* responsive unit, use with calc() */
+}
+
+html, body {
+	overflow-x: hidden;
+	color: white;
+	background-color: var(--bg);
+	font-family: 'IBM Plex Sans', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+code {
+	font-family: 'IBM Plex Mono', Courier, monospace
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+	margin-left: calc(var(--resp) * 3);
+	font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+}

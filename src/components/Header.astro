@@ -1,0 +1,12 @@
+---
+import DiscordLogin from "./DiscordLogin.astro";
+
+const { name: pageName } = Astro.props;
+---
+
+<div class="bg-dark grid items-center grid-cols-2 m-3 rounded-md text-xl">
+	<h1 class="text-fg p-3 font-bold">{!!pageName ? `${pageName}` : "UNTITLED DISCORD BOT"}</h1>
+	<div class="inline-flex justify-end m-3 gap-10">
+		<DiscordLogin />
+	</div>
+</div>
