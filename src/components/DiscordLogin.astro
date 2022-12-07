@@ -1,10 +1,13 @@
 ---
-const { cbURI } = Astro.props;
+interface Props {
+	text?: string;
+}
+const { text = "Login" } = Astro.props;
 ---
 
-<p>
+<span>
 	<a class="font-sans" rel="noreferrer" rel="noopener" target="_blank" href="https://discord.gg/XPmREGZt3X">
-		Login
+		<span class={!!text ? "underline" : ""}>{text}</span>
 		<i class="fa-brands fa-discord"></i>
 	</a>
-</p>
+</span>

@@ -34,6 +34,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
-	margin-left: calc(var(--resp) * 3);
 	font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+	margin-inline: calc(var(--resp) * 6);
 }

@@ -2,14 +2,17 @@
 import "./styles/global.css";
 import Header from "./components/Header.astro";
 
-const { name, noHeader } = Astro.props;
+interface Props {
+	name?: string;
+}
+const { name } = Astro.props;
 ---
 
 
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
 	<meta name="viewport" content="width=device-width" />
 	<meta name="generator" content={Astro.generator} />
 	<title>{!!name ? `UDB. - ${name}` : "Untitled Discord Bot."}</title>
@@ -20,10 +23,11 @@ const { name, noHeader } = Astro.props;
 </head>
 
 <body>
-{ !noHeader ? <Header name={name} /> : void 0 }
+
+<Header name={name} />
 
 <article>
-	<slot/>
+	<slot />
 </article>
 
 </body>
