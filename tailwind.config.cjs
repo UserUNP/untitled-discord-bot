@@ -12,9 +12,9 @@ module.exports = {
 			light: "#E6E8E6"
 		},
 		fontFamily: {
-			serif: ["Montserrat", "Tahoma", "Geneva", "Verdana", "sans-serif"],
-			sans: ["IBM Plex Sans", "Tahoma", "Geneva", "Verdana", "sans-serif"],
-			mono: ["IBM Plex Mono", "Courier", "monospace"]
+			serif: ["Montserrat", "Tahoma", "Geneva", "Verdana", "sans-serif"], // font-serif
+			sans: ["IBM Plex Sans", "Tahoma", "Geneva", "Verdana", "sans-serif"], // font-sans
+			mono: ["IBM Plex Mono", "Courier", "monospace"] // font-mono
 		}
 	},
 	plugins: [],

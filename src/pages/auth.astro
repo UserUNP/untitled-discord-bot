@@ -1,0 +1,24 @@
+---
+import CenterApp from "../components/CenterApp.astro";
+import RandParag from "../components/RandParag.astro";
+import Tooltip from "../components/Tooltip.astro";
+---
+
+<CenterApp noheader>
+	<p class="text-3xl"><Tooltip text="Authenticating using Discord..">Authenticating</Tooltip></p>
+	<p id="inf"><RandParag /></p>
+
+	<script type="module">
+		const code = new URLSearchParams(location.search).get("code");
+		if(!code) throw new Error("Callback code was not provided");
+		let elm = document.querySelector("p#inf");
+		if(!elm) {
+			elm = document.createElement("p");
+			document.body.append(elm);
+		}
+		const userObj = await new Promise(r => {
+			r("imagine this is a user obj");
+		})
+		elm.innerHTML = JSON.stringify(userObj);
+	</script>
+</CenterApp>

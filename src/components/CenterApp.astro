@@ -1,0 +1,15 @@
+---
+import App from "../App.astro";
+
+interface Props {
+	name?: string;
+	noheader?: boolean;
+}
+const { name, noheader } = Astro.props;
+---
+
+<App name={name} noheader={noheader}>
+	<div class="absolute top-0 right-0 flex flex-col grow justify-center items-center w-full h-full">
+		<slot />
+	</div>
+</App>

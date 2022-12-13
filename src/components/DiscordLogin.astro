@@ -2,12 +2,14 @@
 interface Props {
 	text?: string;
 }
-const { text = "Login" } = Astro.props;
+const { text } = Astro.props;
+
+const authURL = "https://discord.com/api/oauth2/authorize?client_id=886415887287066664&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Funtitled-discord-bot%2Fauth&response_type=code&scope=identify";
 ---
 
 <span>
-	<a class="font-sans" rel="noreferrer" rel="noopener" target="_blank" href="https://discord.gg/XPmREGZt3X">
-		<span class={!!text ? "underline" : ""}>{text}</span>
+	<a class="font-sans" rel="noreferrer" href={authURL}>
+		<span class={!!text ? "underline" : ""}>{text || "Login"}</span>
 		<i class="fa-brands fa-discord"></i>
 	</a>
 </span>
