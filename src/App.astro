@@ -28,9 +28,7 @@ const { name, noheader, article } = Astro.props;
 
 {!!noheader ? void 0 : <Header name={name} /> }
 
-{ article ? <article>
-	<slot />
-</article> : <slot /> }
+{ article ? <article> <slot /> </article> : <slot /> }
 
 </body>
 </html>

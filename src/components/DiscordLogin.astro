@@ -4,7 +4,7 @@ interface Props {
 }
 const { text } = Astro.props;
 
-const authURL = "https://discord.com/api/oauth2/authorize?client_id=886415887287066664&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Funtitled-discord-bot%2Fauth&response_type=code&scope=identify";
+const authURL = encodeURI(`https://discord.com/api/oauth2/authorize?client_id=886415887287066664&redirect_uri=${import.meta.env.AUTH_CALLBACK}&response_type=code&scope=${import.meta.env.AUTH_SCOPES}`);
 ---
 
 <span>
