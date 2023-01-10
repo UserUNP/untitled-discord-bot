@@ -29,5 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "udb"
-          entrypoint: "./dist/server/entry.mjs"
+          project: udb
+          root: "./dist"
+          entrypoint: "server/entry.mjs"
