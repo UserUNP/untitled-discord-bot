@@ -1,11 +1,12 @@
 ---
-import App from "../App.astro";
-import DiscordLogin from "../components/DiscordLogin.astro";
-import Tooltip from "../components/Tooltip.astro";
+import App from "../App";
+import DiscordLogin from "../components/DiscordLogin";
+import Tooltip from "../components/Tooltip";
 ---
 
 <App article>
-	<p>You have to <DiscordLogin text="CONNECT WITH DISCORD" /> to register/view your commands</p>
+	<DiscordLogin client:load slot="side" />
+	<p>You have to <DiscordLogin client:idle text="CONNECT WITH DISCORD" /> to register/view your commands</p>
 	<br>
 	<p><strong><samp><Tooltip text="Click to show all">0</Tooltip> REGISTERED COMMANDS</samp></strong></p>
 </App>
