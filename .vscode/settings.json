@@ -1,0 +1,12 @@
+{
+	"deno.enable": true,
+	"deno.lint": true,
+	"editor.suggest.showStatusBar": true,
+	"tailwindCSS.suggestions": true,
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"twind.enable": true,
+	"editor.inlineSuggest.enabled": true,
+	"tailwindCSS.emmetCompletions": true,
+}
