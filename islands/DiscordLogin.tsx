@@ -1,5 +1,5 @@
 import Supabase from "../static/api/Supabase.ts";
-import { FaDiscord } from "https://deno.land/x/react_icons@0.2.3/fa/mod.ts";
+import { FaDiscord } from "../static/icons.ts";
 
 interface Props {
 	text?: string;

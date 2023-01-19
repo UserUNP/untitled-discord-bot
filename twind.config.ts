@@ -3,7 +3,6 @@ import { Options } from "$fresh/plugins/twind.ts";
 export default {
 	selfURL: import.meta.url,
 	theme: {
-		extend: {},
 		colors: {
 			bg: "#090809",
 			fg: "#0094C6",
@@ -16,6 +15,6 @@ export default {
 			serif: ["Montserrat", "Tahoma", "Geneva", "Verdana", "sans-serif"], // font-serif
 			sans: ["IBM Plex Sans", "Tahoma", "Geneva", "Verdana", "sans-serif"], // font-sans
 			mono: ["IBM Plex Mono", "Courier", "monospace"] // font-mono
-		}
+		},
 	}
 } as Options;
